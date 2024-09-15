@@ -28,6 +28,9 @@ app.use(express.json());
 app.use("/user", usersr);
 app.use("/item", itemsr);
 app.use("/order", orders);
+app.get("/", () => {
+  console.log("hi ahmadfaraz");
+});
 app.listen(PORT, () => {
   console.log("Server is running on port:", PORT);
 });
